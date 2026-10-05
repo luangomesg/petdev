@@ -19,27 +19,31 @@ export default function Hero() {
       <div className="container mx-auto relative">
         <article className="grid grid-cols-1 lg:grid-cols-2">
           <div>
-            <h1 className="text-2xl font-bold mb-3 mt-3 md:text-3xl lg:text-4xl">
+            <h1
+              data-aos="fade-down"
+              className="text-2xl font-bold mb-3 mt-3 md:text-3xl lg:text-4xl "
+            >
               Seu pet merece cuidado, carinho e atenção especial.
             </h1>
-            <p className="mb-4 text-sm">
+            <p data-aos="fade-right" className="mb-4 text-sm lg:text-lg">
               Oferecemos os melhores serviçoes para garantir o bem-estar e
               felicidade do seu amigo de quatro patas.
             </p>
             <a
+              data-aos="fade-right"
               target="_blank"
               href={`https://wa.me/556799998800?text=Olá vim pelo site e gostaria de mais informações`}
               className="bg-green-500 font-semibold px-4 py-2 rounded-sm flex items-center justify-center w-fit gap-2"
             >
               <WhatsappLogoIcon className="h-5 w-5" /> Contato via WhatsApp
             </a>
-            <p className="mt-4 text-sm mb-10">
+            <p data-aos="fade-right" className="mt-4 text-sm mb-10">
               <b className="bg-black text-white text-[12px] p-1 rounded-sm">
                 5%
               </b>{" "}
               de desconto na primeira compra
             </p>
-            <div className="w-32 hidden lg:block">
+            <div data-aos="fade-left" className="w-32 hidden lg:block">
               <Image src={catImg} alt="Gato foto" className="" />
             </div>
           </div>

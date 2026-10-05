@@ -9,7 +9,7 @@ export default function About() {
     <section className="bg-[#FDF6EC] py-16">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="relative">
+          <div data-aos="fade-right" className="relative">
             <div className="relative w-full h-100 rounded-3xl overflow-hidden">
               <Image
                 className="object-cover hover:scale-120 duration-300 "
@@ -27,7 +27,7 @@ export default function About() {
             />
           </div>
 
-          <div>
+          <div data-aos="fade-left">
             <h2 className="text-3xl font-bold mb-4">SOBRE</h2>{" "}
             <p className="mb-4">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,

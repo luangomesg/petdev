@@ -23,7 +23,7 @@ const brands = [
 export default function Footer() {
   return (
     <section className="bg-[#E84C3D] text-white py-16">
-      <div className="container mx-auto px-4">
+      <div data-aos="fade-up" className="container mx-auto px-4">
         <div className="border-b border-white/20 pb-8">
           <h2 className="text-2xl font-bold mb-8 text-center">
             Marcas que trabalhamos
