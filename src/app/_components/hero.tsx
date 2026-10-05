@@ -56,6 +56,7 @@ export default function Hero() {
               fill
               sizes="(max-width: 768px) 0vw, 50vw "
               priority
+              data-aos="fade-left"
             />
           </div>
         </article>
