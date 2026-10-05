@@ -106,7 +106,8 @@ export default function OurServices() {
                         <span>{item.duration}</span>
                       </div>
                       <a
-                        href="#"
+                        target="_blank"
+                        href={`https://wa.me/556799998800?text=Olá vim pelo site e gostaria de mais informações sobre ${item.title}`}
                         className="flex items-center justify-center gap-2 hover:bg-red-500 px-4 py-1 rounded-md duration-300"
                       >
                         <WhatsappLogoIcon className="w-5 h-5 text-green-500 " />

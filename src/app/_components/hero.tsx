@@ -5,11 +5,11 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="bg-[#E84C3D] text-white overflow-hidden relative p-4 pb-0">
-      <div>
+      <div className="absolute inset-0  ">
         <Image
           src={dogImg}
           alt="Cachorro foto"
-          sizes="100vw"
+          sizes="(max-width: 1024px) 100vw, 50vw"
           fill
           priority
           className="object-cover opacity-60 lg:hidden"
@@ -27,19 +27,20 @@ export default function Hero() {
               felicidade do seu amigo de quatro patas.
             </p>
             <a
-              href="#"
+              target="_blank"
+              href={`https://wa.me/556799998800?text=Olá vim pelo site e gostaria de mais informações`}
               className="bg-green-500 font-semibold px-4 py-2 rounded-sm flex items-center justify-center w-fit gap-2"
             >
               <WhatsappLogoIcon className="h-5 w-5" /> Contato via WhatsApp
             </a>
             <p className="mt-4 text-sm mb-10">
-              <b className="bg-black text-white text-[11px] p-1 rounded-sm">
+              <b className="bg-black text-white text-[12px] p-1 rounded-sm">
                 5%
               </b>{" "}
               de desconto na primeira compra
             </p>
             <div className="w-32 hidden lg:block">
-              <Image src={catImg} alt="Gato foto" quality={100} className="" />
+              <Image src={catImg} alt="Gato foto" className="" />
             </div>
           </div>
 
@@ -50,7 +51,6 @@ export default function Hero() {
               className="object-contain"
               fill
               sizes="(max-width: 768px) 0vw, 50vw "
-              quality={100}
               priority
             />
           </div>

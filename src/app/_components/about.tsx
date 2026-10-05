@@ -16,7 +16,7 @@ export default function About() {
                 src={aboutImg}
                 alt="Sobre imagem"
                 fill
-                quality={100}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 priority
               />
             </div>
@@ -49,7 +49,8 @@ export default function About() {
             </ul>
             <div className="flex mt-6 gap-2">
               <a
-                href="#"
+                target="_blank"
+                href={`https://wa.me/556799998800?text=Olá vim pelo site e gostaria de mais informações`}
                 className="bg-[#E84C3D] text-white flex items-center w-fit gap-2 px-4 py-2 rounded-md"
               >
                 <WhatsappLogoIcon className="text-green-500 w-5 h-5" /> Contato

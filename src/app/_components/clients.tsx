@@ -63,7 +63,6 @@ export default function OurServices() {
                           alt="foto do tutor"
                           fill
                           sizes="96px"
-                          quality={100}
                         />
                       </div>
 
